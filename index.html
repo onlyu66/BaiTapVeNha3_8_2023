@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bài Tập Trên Lớp</title>
+    <style>
+      /* Bài 3 */
+      p {
+        font-size: 16px;
+        transition: font-size 0.3s ease;
+      }
+      button {
+        font-size: 14px;
+        padding: 8px 12px;
+        cursor: pointer;
+      }
+
+      /* Bài 4 */
+      ul {
+        list-style-type: none;
+        padding: 0;
+      }
+      li {
+        padding: 8px;
+        transition: background-color 0.3s ease;
+        cursor: pointer;
+      }
+      .highlight {
+        background-color: #4de491;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Bài 1 -->
+    <button onclick="changeBgColor()">Change Background Color</button>
+
+    <!-- Bài 2 -->
+    <p id="text1">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum
+      eligendi sunt id sed soluta hic sapiente ipsam qui exercitationem
+      aspernatur quas temporibus nobis saepe, magni tempore? Voluptate
+      laboriosam dicta quia nulla!
+    </p>
+    <button onclick="changeParagraph()" id="changeParagraphButton">
+      Change
+    </button>
+
+    <!-- Bài 3 -->
+    <p id="text2">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum
+      eligendi sunt id sed soluta hic sapiente ipsam qui exercitationem
+      aspernatur quas temporibus nobis saepe, magni tempore? Voluptate
+      laboriosam dicta quia nulla!
+    </p>
+    <button id="zoomInButton" onclick="zoomInF()">Phóng to</button>
+    <button id="zoomOutButton" onclick="zoomOutF()">Thu nhỏ</button>
+
+    <!-- Bài 4 -->
+    <ul id="itemList">
+      <li>Item 1</li>
+      <li>Item 2</li>
+      <li>Item 3</li>
+      <li>Item 4</li>
+      <li>Item 5</li>
+    </ul>
+
+    <!-- Bài 5 -->
+    <input
+      type="text"
+      id="inputField"
+      placeholder="Nhập dữ liệu..."
+    />
+    <button id="submitButton" onclick="changeInput()">Hiển thị</button>
+    <p id="outputText"></p>
+    <script src="./app.js"></script>
+  </body>
+</html>
